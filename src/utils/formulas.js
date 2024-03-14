@@ -3,13 +3,13 @@ const calcPaperWeight = (
   mediaGramsSqMeterWeight,
   detailWidth,
   detailLength
-) => (quantity * mediaGramsSqMeterWeight * detailWidth * detailLength) / 1e6; // gram;
+) => (quantity * mediaGramsSqMeterWeight * detailWidth * detailLength) / 1e9; // gram;
 
 const calcOneSqMLaminateWeight = (
   filmRollWeightKg,
   filmRollLength,
   filmRollWidth
-) => (1e6 * filmRollWeightKg) / (filmRollLength * filmRollWidth); // gram;
+) => (1e3 * filmRollWeightKg) / (filmRollLength * filmRollWidth); // gram per sq meter;
 
 const calcLaminateWeight = (
   quantity,
@@ -28,7 +28,7 @@ const calcLaminateWeight = (
 const calcPaperThickness = (mediaThicknessMm) => mediaThicknessMm;
 
 const calcLaminateThickness = (laminationSides, filmThicknessMicron) =>
-  laminationSides * filmThicknessMicron * 1000;
+  laminationSides * filmThicknessMicron / 1000;
 
 export const calcProductionWeight = ({
   quantity,

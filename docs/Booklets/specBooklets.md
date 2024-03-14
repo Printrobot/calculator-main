@@ -35,7 +35,8 @@ pagesCover = 4 (всегда)
 ## Материал
 
 Материал на котором печатают (Бумага). У разных видов продукции разный набор материалов, у обложки и блока тоже разный.
-```json
+
+```txt
 materialMedia: {
     mediaName: "меловка матовая", // название материала (показать в UI)
     mediaOneSheetCost: 15.06, // цена руб за лист
@@ -50,7 +51,7 @@ materialMedia: {
 
 Набор данных:
 
-```json
+```txt
 materialMedia: {
     id: 1
     mediaName: "меловка матовая",
@@ -92,7 +93,8 @@ materialMedia: {
 laminationSides: number // 1 или 2 стороны надо заламинировать
 
 Выбрать материал:
-```json
+
+```txt
 MaterialLaminate = {
     id // получаем из артикула материала
     filmOneMeterCost: number // цена
@@ -106,7 +108,7 @@ MaterialLaminate = {
 
 Набор данных:
 
-```json
+```txt
 MaterialLaminate = {
     id: 1,
     filmOneMeterCost: 9,

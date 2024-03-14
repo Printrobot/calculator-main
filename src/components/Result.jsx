@@ -41,7 +41,7 @@ const Result = ({
       >
         <Text>
           <ShoppingOutlined /> Вес тиража:{" "}
-          <span style={{ fontWeight: "bold" }}>{productionWeight} г</span>
+          <span style={{ fontWeight: "bold" }}>{productionWeight} кг</span>
         </Text>
         <Text>
           <ColumnHeightOutlined /> Высота всего тиража:{" "}

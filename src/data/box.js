@@ -15,4 +15,12 @@ export const boxes = {
     height: 285,
     cost: 29,
   },
+  8: {
+    id: 8,
+    name: "№8",
+    width: 430,
+    length: 290,
+    height: 350,
+    cost: 55.8,
+  },
 };
