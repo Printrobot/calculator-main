@@ -1,0 +1,67 @@
+тип Гофрокоробки:
+    id: 18,
+    name: "№18",
+    width: 630, // Основание это width Х length
+    length: 320,
+    height: 340,
+    cost: 44,
+    weight: 200 // вес одной коробки г
+
+  тип Рулонный ламинат:
+    id: 1, // получаем из артикула материала
+    filmOneMeterCost: 9, // цена за погонный метр
+    filmThicknessMicron: 30, // Толщина ламината мкм (показать в UI)
+    filmTexture: "глянцевый", // (показать в UI)
+    filmRollLength: 3000, // Длина намотки ламината в рулоне метров
+    filmRollWidth: 500, // Ширина рулона ламината в мм
+    filmRollWeightKg: 50, // вес рулона ламината в кг
+
+  тип Пакетный ламинат: - в виджете не нужен!
+    id: 1, // получаем из артикула материала
+    filmCost: 9, // цена за 1 пакет (лист)
+    filmThicknessMicron: 30, // Толщина ламината мкм (показать в UI)
+    filmTexture: "глянцевый", // (показать в UI)
+    filmRollHeigth: 30, // Длина намотки ламината в рулоне метров
+    filmRollWidth: 500, // Ширина рулона ламината в мм
+    filmRollWeightKg: 50, // вес рулона ламината в кг
+
+  тип Бумага
+    id: 3,
+    mediaName: "offset", меловка, картон
+    mediaOneSheetCost: 7.56,
+    mediaGramsSqMeterWeight: 80,
+    mediaTexture: "offset",
+    mediaColor: "white",
+    mediaThicknessMm: 0.1,
+    mediaLength: 1000,
+    medialWidth: 700,
+    двестороные разные: да, нет
+
+ тип Самоклеющаяся бумага    
+    id: 3,
+    mediaName: самоклейка с надсечками
+    mediaOneSheetCost: 7.56,
+    mediaGramsSqMeterWeight: 80, с подложкой
+    mediaTexture: "глянцевая",
+    mediaColor: "white",
+    mediaThicknessMm: 0.1,
+    mediaLength: 1000,
+    medialWidth: 700,
+    двестороные разные: да, нет
+    шаг надсечки: 35 мм
+    надсечки вдоль стороны: широкой, узкой
+
+тип Пластик для печати    
+    id: 3,
+    mediaName: пластик
+    mediaOneSheetCost: 7.56,
+    mediaGramsSqMeterWeight: 80, 
+    mediaTexture: "глянцевая",
+    mediaColor: "white",
+    mediaThicknessMm: 0.1,
+    mediaLength: 1000,
+    medialWidth: 700,
+    двестороные разные: да, нет
+    активированный: да, нет
+
+    
